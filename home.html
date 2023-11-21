@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper-width">
+        <h2>ComoxVelly lifeline</h2>
+        <nav>
+          <a class="toggle" onclick="showNav()"
+            ><i class="fa fa-bars" aria-hidden="true"></i
+          ></a>
+          <ul id="nav-items">
+            <li><a href="">Home</a></li>
+            <li><a href="">Product & Services</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+    <main>
+      <section>
+        <img
+          src="images/lifeline-hero-homepage-new-420x260.jpg"
+          alt="welcome page"
+        />
+        <q>Help At The Push Of A Button</q>
+        <p></p>
+        Lifeline: A 24/7 personal emergency response system. Press the wearable
+        Personal Help Button to summon help silently. A dedicated Personal
+        Response Associate ensures a fast response, crucial in emergencies, even
+        when communication is difficult
+      </section>
+      <section class="services">
+        <h2>Services</h2>
+        <h3>HomeSafe Basic</h3>
+        <p>
+          Wearable help button for instant assistance within in-home
+          Communicator range.
+        </p>
+        <h3>HomeSafe with Fall Detection</h3>
+        <p>
+          HomeSafe with Fall Detection ensures independent living with reliable
+          automatic fall detection technology. Designed for those at risk or
+          with a fear of falling, it minimizes false alarms, providing quick
+          access to help.
+        </p>
+        <h3>On The Go is Coming Soon!</h3>
+        <p>
+          Mobile medical alert with GPS and five locating technologies for
+          on-the-go safety. Usable at home or away with cellular connectivity.
+          Features automatic fall detection for added security.
+        </p>
+      </section>
+      <section class="how-it-work">
+        <h2>How Lifeline Works</h2>
+        <h3>Step 1</h3>
+        <p>If you need help, push your Personal Help Button.</p>
+        <h3>Step 2</h3>
+        <p></p>
+
+      </section>
+    </main>
+  </body>
+</html>
