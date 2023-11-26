@@ -45,3 +45,10 @@ html {
     flex-direction: column;
     align-items: flex-end;
   }
+  /*===how_it_work===*/
+  .how_it_work_images{
+    border-radius: 50%;
+    border: 1px solid black;
+    max-width: 25%;
+    background-color: blue;
+  }
