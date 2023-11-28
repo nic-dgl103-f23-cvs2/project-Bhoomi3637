@@ -45,10 +45,14 @@ nav ul li a {
   align-items: flex-end;
 }
 /*===how_it_work===*/
+.how-it-work h2{
+  text-align: center;
+    
+}
 .how_it_work_images {
-  border-radius: 50%;
+  border-radius: 40%;
   border: 1px solid black;
-  max-width: 25%;
+  max-width: 30%;
   background-color: blue;
 }
 /*====Services====*/
@@ -110,6 +114,20 @@ nav ul li a {
   .wrapper-width{
     width: 1170px;
     margin: auto;
+  }
+  /*====hero==*/
+  .hero{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  /*====how it works==*/
+  
+  .steps{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    grid-column-gap: 6%;
+
   }
   .services{
     display: flex;
