@@ -1,54 +1,92 @@
 html {
-    font-size: 62.5%;
-  }
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.6rem;
+  margin: 0;
+}
+/*header===*/
+
+header {
+  background-color: #058789;
+  overflow: auto;
+}
+header h2 {
+  float: left;
+  width: 120px;
+  text-align: center;
+}
+nav {
+  float: right;
+  margin: 0;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+nav ul li {
+  padding: 8px 0;
+}
+
+nav ul li a {
+  color: #505d68;
+  text-decoration: none;
+}
+.show-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+/*===how_it_work===*/
+.how_it_work_images {
+  border-radius: 50%;
+  border: 1px solid black;
+  max-width: 25%;
+  background-color: blue;
+}
+/*====Services====*/
+.services1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px 10px 20px 10px;
+  text-align: center;
+  background-color: hsla(120, 60%, 70%, 0.3);
+}
+.services1 h3 {
+  padding-top: 5%;
+  font-size: 2rem;
+  columns: rgb(6, 6, 55);
+}
+.services1 a {
+  text-decoration: none;
+  text-align: center;
+  width: 150px;
+  padding: 10px 15px;
+  background-color: #424b5a;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
   
-  * {
-    box-sizing: border-box;
+}
+.shop{
+  margin-bottom: 2.5rem;
+}
+@media only screen and (min-width: 1200px) {
+  h2{
+    font-size: 3.5rem;
   }
-  body{
-    font-size: 1.6rem;
-    margin: 0;
-    text-align: center;
+  .wrapper-width{
+    width: 1170px;
+    margin: auto;
   }
-  /*header===*/
- header{
-    background-color: mediumaquamarine;
-    overflow: auto;
- }
- header h2{
-    float: left;
-    width: 120px;
-    text-align: center;
- }
-  nav{
-    float: right;
-    margin: 0;
-  }
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: none;
-    
-  }
-  
-  nav ul li {
-    padding: 8px 0;
-  }
-  
-  nav ul li a {
-    color: #505d68;
-    text-decoration: none;
-  }
-  .show-items {
+  .services{
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row;
   }
-  /*===how_it_work===*/
-  .how_it_work_images{
-    border-radius: 50%;
-    border: 1px solid black;
-    max-width: 25%;
-    background-color: blue;
-  }
+}
