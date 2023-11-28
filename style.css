@@ -77,6 +77,32 @@ nav ul li a {
 .shop{
   margin-bottom: 2.5rem;
 }
+/*===footer==*/
+.fa {
+  padding: 15px;
+  font-size: 35px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 40%;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+ 
+  background-image: radial-gradient(#f9ce34, #ee2a7b,#6228d7) ;
+  color: white;
+}
+.social-media{
+  display: none;
+}
 @media only screen and (min-width: 1200px) {
   h2{
     font-size: 3.5rem;
@@ -88,5 +114,21 @@ nav ul li a {
   .services{
     display: flex;
     flex-direction: row;
+  }
+  /*===footer==*/
+  .footer{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+  }
+  .social-media{
+    display: flex;
+  }
+  .social-media1{
+    display: none;
+  }
+  footer p{
+    text-align: center;
+    border-top: 0.0005rem black solid;
   }
 }
