@@ -1,116 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product & Services</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-  <header>
-    <div class="wrapper-width">
-      <img src="images/logo.png" alt="logo" width="80" />
-      <nav>
-        <a class="toggle" onclick="showNav()"
-          ><i class="fa fa-bars" aria-hidden="true"></i
-        ></a>
-        <ul id="nav-items">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="product.html">Product & Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="">Order Now</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <script>
-    function showNav() {
-      var element = document.getElementById("nav-items");
-      element.classList.toggle("show-items");
-    }
-  </script>
-      <main>
-        <h1>Service Options</h1>
-        <section>
-        <h2>Lifeline Communicator Units</h2>
-        <img src="images/Communicator-unit.png" alt="Communicator-unit" width="400">
-        </section>
-        <section>
-            <h2>Product</h2>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper-width">
+        <img src="images/logo.png" alt="logo" width="80" />
+        <nav>
+          <a class="toggle" onclick="showNav()"
+            ><i class="fa fa-bars" aria-hidden="true"></i
+          ></a>
+          <ul id="nav-items">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="product.html">Product & Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="">Order Now</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+    <main>
+      <section>
+        <div class="wrapper-width">
+          <h1>Service Options</h1>
+
+          <h2>Lifeline Communicator Units</h2>
+          <div class="communicator">
+            <div class="communicator-regular">
+              <p>
+                A Regular Lifeline Communicator that is connected to an active
+                telephone jack and electrical outlet. This type of unit allows
+                you to connect your existing phone into back of the Lifeline
+                unit so that your phone works through the Lifeline unit.
+              </p>
+              <img src="images/Communicator.png" alt="communicator" width="200"/>
+            </div>
+            <div class="communicator-cellular">
+              <img src="images/Communicator-unit.png" alt="communicator" />
+              <p>
+                A Wireless Lifeline Communicator that works with it's own
+                cellular technology; this unit is connected to an electrical
+                outlet in your home.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="product-1">
+        <div class="wrapper-width">
+          <h2>Product</h2>
+          <div class="product">
             <article>
-            <h3>homesafe Basic</h3>
-            <img src="images/home-safe-product.jpg" alt="homsafe" width="300">
-            <p>Our most affordable system. Get access to help 24/7 at the push of a button.</p>
-            <ul>
+              <h3>Homesafe Basic</h3>
+              <img  style="text-align: center;"
+              style="text-align: center;"
+                src="images/home-safe-product.jpg"
+                alt="homsafe"
+                width="200"
+              />
+              <p>
+                Our most affordable system. Get access to help 24/7 at the push
+                of a button.
+              </p>
+              <ul>
                 <li>Light weight</li>
                 <li>Pendant or wristband</li>
-                <li>Two-way voice</li>
                 <li>Long lasting battery we change when needed</li>
                 <li>100% waterproof</li>
-                
-            </ul>
+                <li>Price</li>
+              </ul>
             </article>
             <article>
-            <h3>HomeSafe with Fall Detection</h3>
-            <img src="images/fall-detection-product.webp" alt="fall detection">
-            <p>Can automatically call for help if it detects a fall.</p>
-            <ul>
+              <h3>HomeSafe with Fall Detection</h3>
+              <img
+              style="text-align: center;"
+                src="images/fall-detection-product.webp"
+                alt="fall detection"
+                width="200"
+              />
+              <p>Can automatically call for help if it detects a fall.</p>
+              <ul>
                 <li>Use at home</li>
                 <li>Pendant</li>
                 <li>Automatic Fall Detection</li>
                 <li>100% waterproof</li>
-
-            </ul>
+              </ul>
             </article>
             <article>
-            <h3>On The Go is Coming Soon!</h3>
-            <img src="images/on-the-go-product.webp" alt="on-the-go" width="200">
-            <p>Mobile medical alert system with GPS gives you freedom to be safe while on the go.</p>
-            <ul>
+              <h3>On The Go is Coming Soon!</h3>
+              <img
+                src="images/on-the-go-product.webp"
+                alt="on-the-go"
+                width="200"
+              />
+              <p>
+                Mobile medical alert system with GPS gives you freedom to be
+                safe while on the go.
+              </p>
+              <ul>
                 <li>Use away or at home</li>
                 <li>Automatic Fall Detection</li>
                 <li>5 Locating technologies</li>
                 <li>Water Resistant, can be worn in the bath and shower</li>
-            </ul>
+              </ul>
             </article>
-        </section>
-        <section>
+          </div>
+        </div>
+      </section>
+      <section class="product-action">
+        <div class="wrapper-width">
+          
           <h2>Have questions or want to speak to a representative?</h2>
-          <span>1 (250) 338 - 4255</span><span><a href="Reception@comoxvalleylifeline.com">Email Us</a></span>
-        </section>
-      </main>
-       <footer>
-        
-        <h2>We're Here to Help You.</h2>
-        <h3>Product</h3>
-        <ul>
-          <li>On the Go</li>
-          <li>At Home</li>
-          <li>Fall Detection</li>
-        </ul>
-        <h3>About us</h3>
-        <ul>
-          <li>Non Profitable Organization</li>
-          <li>Volunteers</li>
-          <li>Donation</li>
-        </ul>
-  
-        <h3>Contact</h3>
-        <address>
-          <a href="">Reception@comoxvalleylifeline.com</a>.<br />
-          <a href="tel:+14155550132">+1 (250) 338 - 4255</a>.<br />
-          <a href="">Fax: 250 - 338 - 4922</a><br>
-          Comox Valley Lifeline Society<br />392 - 10th Street<br />
-          Courtenay, BC V9N 1P5<br />
-          Canada
-        </address>
-        <p>©2023 ComoxvellyLifeline | All right reserved</p>
-      </footer>
-    
-</body>
+          <i class="fa fa-phone" style="font-size:30px;color:#16425b"></i>
+          <a href="tel:+14155550132">+1 (250) 338 - 4255</a>
+          <i class="fa fa-envelope" style="font-size:24px;color:#16425b"></i>
+          <a href="Reception@comoxvalleylifeline.com">Email Us</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrapper-width">
+        <div class="footer">
+          <div class="left">
+            <h2>We're Here to Help You.</h2>
+            <div class="social-media">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-instagram"></a>
+            </div>
+          </div>
+          <div class="middle">
+            <h3>Product</h3>
+            <ul>
+              <li><a href="">On the Go</a></li>
+              <li><a href="">At Home</a></li>
+              <li><a href="">Fall Detection</a></li>
+            </ul>
+          </div>
+          <div class="middle1">
+            <h3>About us</h3>
+            <ul>
+              <li><a href="">Non Profital</a></li>
+              <li><a href="">Volunteers</a></li>
+              <li><a href="">Donation</a></li>
+            </ul>
+          </div>
+          <div class="right">
+            <h3>Contact</h3>
+            <address>
+              <a href="">Reception@comoxvalleylifeline.com</a>.<br />
+              <a href="tel:+14155550132">+1 (250) 338 - 4255</a>.<br />
+              <a href="">Fax: 250 - 338 - 4922</a><br />
+              Comox Valley Lifeline Society<br />392 - 10th Street<br />
+              Courtenay, BC V9N 1P5<br />
+              Canada
+            </address>
+          </div>
+          <div class="social-media1">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+          </div>
+        </div>
+      </div>
+      <p>©2023 ComoxvalleyLifeline | All right reserved</p>
+    </footer>
+  </body>
 </html>
