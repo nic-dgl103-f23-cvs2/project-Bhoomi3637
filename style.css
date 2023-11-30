@@ -89,7 +89,7 @@ nav ul li a {
   columns: rgb(6, 6, 55);
   color:#16425b ;
 }/*product section a*/
-.services1 a ,article a{
+.services1 a ,article a,.call-to-action a{
   text-decoration: none;
   text-align: center;
   width: 200px;
@@ -101,6 +101,18 @@ nav ul li a {
 }
 .shop {
   margin-bottom: 2.5rem;
+}
+/**call to action==*/
+.call-to-action{
+  background-color:#b2f7ef ;
+  padding: 5%;
+  
+}
+.call-to-action h2{
+  color: #16425b
+}
+.call-to-action a{
+  text-align: center;
 }
 /*===footer==*/
 footer {
@@ -188,9 +200,35 @@ article p {
   
 }
 /*============================contact us=======================================*/
+.contact1 h2,.contact1 h3,.form h2,caption{
+  color: #16425b;
+}
+.contact1 h2{
+  border-bottom: 5px solid #E9EFF6;
+
+}
+.contact2{
+  margin-left: 4%;
+}
+.contact1 h3{
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.contact1 a{
+
+  font-weight: bolder;
+  font-weight: 2000;
+  color: #16425b;
+ font-size: 3rem;
+}
+.Customer{
+  margin-top: 20%;
+  border-top: 1px solid #E9EFF6;
+}
+
 /*-----form---*/
 .form {
-  max-width: 600px;
+  max-width: 550px;
   margin: 20px auto;
   background-color: #fff;
   padding: 20px;
@@ -214,14 +252,35 @@ select {
   margin-bottom: 15px;
   box-sizing: border-box;
 }
+.wrapper-button {
+  display: flex;
+  justify-content: space-between;
+}
+input[type="reset"] {
+  width: 150px;
+  color:  #E03F3E;
+  padding: 12px 20px;
+  border: 1px solid  #E03F3E;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="reset"]:hover {
+  background-color: #d1efe3;
+}
+
 input[type="submit"] {
-  background-color: #333;
-  color: #fff;
+  width: 150px;
+  background-color:  #E03F3E;
+  color: white;
+  padding: 12px 20px;
+  border: 1px solid #0e7a0d;
+  border-radius: 4px;
   cursor: pointer;
 }
 
 input[type="submit"]:hover {
-  background-color: #555;
+  background-color: #00ab66;
 }
 /**--table--**/
 table {
@@ -324,6 +383,14 @@ tbody tr:hover {
     width: 500px;
   }
   /*==product-action==*/
+  /*=========================contact us================*/
+  .contact{
+    display: flex;
+    flex-direction: row;
+  }
+  .form{
+    margin-left: 20%;
+  }
 
   /*===footer==*/
   .footer {
