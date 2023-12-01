@@ -56,6 +56,16 @@ nav ul li a {
 .toggle {
   color: white;
 }
+/**hero--*/
+.hero {
+  padding: 10%;
+  background-image: url(images/lifeline-hero-homepage-new-420x260.jpg);
+  max-width: 100%;
+
+  background-repeat: no-repeat;
+  background: cover;
+}
+
 /*===how_it_work===*/
 .how-it-work {
   text-align: center;
@@ -67,18 +77,17 @@ nav ul li a {
   border-radius: 40%;
   border: 1px solid black;
   max-width: 100%;
-  
 }
 /*====Services====*/
 .service {
   background-color: #f9f9f9;
 }
 .services1 {
-  
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 10px 15px 20px 15px;
   text-align: center;
   background-color: white;
+  padding: 1px;
 }
 .service-content {
   margin: 4% 4%;
@@ -87,14 +96,16 @@ nav ul li a {
   padding-top: 5%;
   font-size: 2rem;
   columns: rgb(6, 6, 55);
-  color:#16425b ;
-}/*product section a*/
-.services1 a ,article a,.call-to-action a{
+  color: #16425b;
+} /*product section a*/
+.services1 a,
+article a,
+.call-to-action a {
   text-decoration: none;
   text-align: center;
   width: 200px;
   padding: 10px 15px;
-  background-color: #E03F3E;
+  background-color: #e03f3e;
   border-radius: 5px;
   color: white;
   font-size: 12px;
@@ -102,16 +113,38 @@ nav ul li a {
 .shop {
   margin-bottom: 2.5rem;
 }
-/**call to action==*/
-.call-to-action{
-  background-color:#b2f7ef ;
+/*-----about us---*/
+.about-us-main h2{
+  text-align: center;
+  color: #16425b;
+  font-size: 35px;
+}
+
+.about-us{
+  margin: 5% 15%;
   padding: 5%;
-  
+  text-align: center;
+  background-color: #b2f7ef;
+  border-radius: 3px;
 }
-.call-to-action h2{
-  color: #16425b
+span{
+  font-size: 3rem;
+  font-weight: 800;
+  color: #16425b;
 }
-.call-to-action a{
+.text{
+  font-size: 2rem;
+  font-weight: 500;
+}
+/**call to action==*/
+.call-to-action {
+  background-color: #b2f7ef;
+  padding: 5%;
+}
+.call-to-action h2 {
+  color: #16425b;
+}
+.call-to-action a {
   text-align: center;
 }
 /*===footer==*/
@@ -119,6 +152,7 @@ footer {
   background-color: #058789;
   color: white;
   text-align: center;
+  padding: 10px auto;
 }
 .middle h3,
 .middle1 h3 {
@@ -158,27 +192,38 @@ footer a,
 .social-media {
   display: none;
 }
+footer h2{
+  margin: 0;
+  padding-top: 5%;
+  
+}
 /*============================product=================*/
+
+
+
+article ul {
+  text-align: left;
+}
 .communicator-regular {
   display: flex;
   flex-direction: column-reverse;
 }
-.product-1{
+.product-1 {
   background: #f9f9f9;
 }
 article {
+  text-align: center;
+  padding: 16px 10px;
   margin: 5%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: white;
 }
 
-article h3
- {
+article h3 {
   margin-top: 5%;
   font-size: 2.2rem;
   text-align: center;
   color: #16425b;
-
 }
 article p {
   text-align: center;
@@ -190,41 +235,55 @@ article p {
   padding: 2% 4% 4%;
   text-align: center;
 }
-.product-action h2 ,.location h2{
+
+.product-action h2,
+.location h2 {
   color: #16425b;
   text-align: center;
 }
-.product-action a{
+.product-action a {
   font-size: 2rem;
   margin: 2% 4% auto auto;
-  
 }
 /*============================contact us=======================================*/
-.contact1 h2,.contact1 h3,.form h2,caption{
+.hero-contact {
+  background-image: url(images/contact-us.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 75vh;
+}
+.wrapper-width h1 {
+  margin: 0;
+}
+
+.contact1 h2,
+.contact1 h3,
+.form h2,
+caption {
   color: #16425b;
 }
-.contact1 h2{
-  border-bottom: 5px solid #E9EFF6;
-
+.contact1 h2 {
+  border-bottom: 5px solid #e9eff6;
 }
-.contact2{
+.contact2 {
   margin-left: 4%;
 }
-.contact1 h3{
+.contact1 h3 {
   font-size: 2.5rem;
   font-weight: 400;
 }
-.contact1 a{
-
+.contact1 a {
   font-weight: bolder;
   font-weight: 2000;
   color: #16425b;
- font-size: 3rem;
+  font-size: 3rem;
 }
-.Customer{
+.Customer {
   margin-top: 20%;
-  border-top: 1px solid #E9EFF6;
+  border-top: 1px solid #e9eff6;
 }
+
 
 /*-----form---*/
 .form {
@@ -258,9 +317,9 @@ select {
 }
 input[type="reset"] {
   width: 150px;
-  color:  #E03F3E;
+  color: #e03f3e;
   padding: 12px 20px;
-  border: 1px solid  #E03F3E;
+  border: 1px solid #e03f3e;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -271,7 +330,7 @@ input[type="reset"]:hover {
 
 input[type="submit"] {
   width: 150px;
-  background-color:  #E03F3E;
+  background-color: #e03f3e;
   color: white;
   padding: 12px 20px;
   border: 1px solid #0e7a0d;
@@ -354,9 +413,30 @@ tbody tr:hover {
     display: flex;
     flex-direction: row;
   }
-  .services1{
+  .services1 {
     width: 500px;
   }
+  /*----about us--*/
+  .about-us-main h2{
+    
+    font-size: 40px;
+  }
+  .about{
+    display: flex;
+  }
+  .about1{
+    display: flex;
+  }
+  .about1 .about-us{
+    margin: 2% 12%;
+  }
+ 
+  .about-us{
+    width: 700px;
+    margin: 2% 5%;
+    padding: 2%
+  }
+ 
   /*=================================product================================*/
   /*==communicator==*/
   .communicator {
@@ -367,12 +447,15 @@ tbody tr:hover {
   .communicator-cellular {
     display: flex;
     flex-direction: row;
+    flex: 1;
   }
   .communicator-regular p {
-    margin: 5% 20%;
+    margin: 5%;
+    width: 400px;
   }
   .communicator-cellular p {
-    margin: 5% 20%;
+    margin: 5% 8% 5% 10%;
+    width: 400px;
   }
   /*product*/
   .product {
@@ -384,11 +467,11 @@ tbody tr:hover {
   }
   /*==product-action==*/
   /*=========================contact us================*/
-  .contact{
+  .contact {
     display: flex;
     flex-direction: row;
   }
-  .form{
+  .form {
     margin-left: 20%;
   }
 
