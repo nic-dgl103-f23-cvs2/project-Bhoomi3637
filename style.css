@@ -16,6 +16,10 @@ q {
 a {
   text-decoration: none;
 }
+
+h1 {
+  font-size: 3.5rem;
+}
 /*header===*/
 
 header {
@@ -56,19 +60,46 @@ nav ul li a {
 .toggle {
   color: white;
 }
+.order {
+  background-color: #e03f3e;
+  padding: 10px 20px;
+  border-radius: 2px;
+}
 /**hero--*/
 .hero {
-  padding: 10%;
-  background-image: url(images/lifeline-hero-homepage-new-420x260.jpg);
-  max-width: 100%;
+  padding: 15%;
+  background-image: url(images/hero-image-2.jpg);
+  background-size: cover;
+  background-position: right;
 
   background-repeat: no-repeat;
   background: cover;
+  max-width: 100%;
 }
-
+.hero-content {
+  text-align: center;
+  font-size: 2rem;
+  color: #16425b;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+q {
+  font-size: 3rem;
+  margin-top: 10px;
+}
 /*===how_it_work===*/
 .how-it-work {
   text-align: center;
+}
+.how-it-work h2 {
+  color: #16425b;
+  padding: 2%;
+  font-size: 3rem;
+}
+.extra h3 {
+  font-size: 2.5rem;
 }
 .step {
   margin: auto 8%;
@@ -100,7 +131,8 @@ nav ul li a {
 } /*product section a*/
 .services1 a,
 article a,
-.call-to-action a {
+.call-to-action a,
+.button {
   text-decoration: none;
   text-align: center;
   width: 200px;
@@ -108,38 +140,43 @@ article a,
   background-color: #e03f3e;
   border-radius: 5px;
   color: white;
-  font-size: 12px;
+  font-size: 18px;
 }
+a:hover {
+  background-color: #55acee;
+}
+
 .shop {
   margin-bottom: 2.5rem;
 }
 /*-----about us---*/
-.about-us-main h2{
+.about-us-main h2 {
   text-align: center;
   color: #16425b;
   font-size: 35px;
 }
 
-.about-us{
+.about-us {
   margin: 5% 15%;
   padding: 5%;
   text-align: center;
-  background-color: #b2f7ef;
+  background-color: lightgray;
   border-radius: 3px;
 }
-span{
+span {
   font-size: 3rem;
   font-weight: 800;
   color: #16425b;
 }
-.text{
+.text {
   font-size: 2rem;
   font-weight: 500;
 }
 /**call to action==*/
 .call-to-action {
-  background-color: #b2f7ef;
+  background-color: #ffffff;
   padding: 5%;
+  text-align: center;
 }
 .call-to-action h2 {
   color: #16425b;
@@ -172,42 +209,65 @@ footer a,
   padding: 15px;
   font-size: 35px;
   width: 40px;
+  height: 40px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
-  border-radius: 40%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .fa-facebook {
   background: #3b5998;
   color: white;
+  padding: auto;
+  margin: 10px;
 }
 .fa-twitter {
   background: #55acee;
   color: white;
+  padding: auto;
+  margin: 10px;
 }
 .fa-instagram {
   background-image: radial-gradient(#f9ce34, #ee2a7b, #6228d7);
   color: white;
+  padding: auto;
+  margin: 10px;
 }
 .social-media {
   display: none;
 }
-footer h2{
+footer h2 {
   margin: 0;
   padding-top: 5%;
-  
 }
 /*============================product=================*/
 
-
-
+.product-1 h2,
+.service h2,
+.product-service h2,
+.product-content h1 {
+  padding-top: 3%;
+  text-align: center;
+  color: #16425b;
+  font-size: 3.5rem;
+}
+.product-1 h3 {
+  color: #16425b;
+  font-size: 2.5rem;
+}
 article ul {
   text-align: left;
 }
-.communicator-regular {
-  display: flex;
-  flex-direction: column-reverse;
+/*==communicator==*/
+
+.Communicator-content {
+  margin: 1% 4%;
+  font-size: 1.8rem;
 }
+
 .product-1 {
   background: #f9f9f9;
 }
@@ -229,9 +289,17 @@ article p {
   text-align: center;
   margin: 5% 10%;
 }
+/*services*/
+.product-service1 {
+  padding: 5%;
+  margin: 5% 10%;
+  text-align: center;
+  background-color: lightgray;
+  border-radius: 3px;
+}
 /*==product-action==*/
 .product-action {
-  background-color: #b2f7ef;
+  background-color: #ffffff;
   padding: 2% 4% 4%;
   text-align: center;
 }
@@ -246,12 +314,8 @@ article p {
   margin: 2% 4% auto auto;
 }
 /*============================contact us=======================================*/
-.hero-contact {
-  background-image: url(images/contact-us.jpg);
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 75vh;
+.hero-contact h1 {
+  color: #16425b;
 }
 .wrapper-width h1 {
   margin: 0;
@@ -283,7 +347,6 @@ caption {
   margin-top: 20%;
   border-top: 1px solid #e9eff6;
 }
-
 
 /*-----form---*/
 .form {
@@ -339,7 +402,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #00ab66;
+  background-color: #3b5998;
 }
 /**--table--**/
 table {
@@ -397,17 +460,33 @@ tbody tr:hover {
     margin: 20px 100px auto auto;
   }
   /*====hero==*/
-  .hero {
-    display: flex;
-    flex-direction: row-reverse;
+
+  .hero-content {
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 40px 10px;
+    border-radius: 10px;
   }
 
   /*====how it works==*/
+  .how-work-content {
+    display: flex;
+    gap: 5%;
+  }
+  .extra {
+    width: 500px;
+    margin-left: 20%;
+    text-align: left;
+  }
 
   .steps {
     display: grid;
     grid-template-columns: auto auto auto auto;
     text-align: center;
+    margin-top: 10%;
   }
   .services {
     display: flex;
@@ -417,45 +496,48 @@ tbody tr:hover {
     width: 500px;
   }
   /*----about us--*/
-  .about-us-main h2{
-    
+  .about-us-main h2 {
     font-size: 40px;
   }
-  .about{
+  .about {
     display: flex;
   }
-  .about1{
+  .about1 {
     display: flex;
   }
-  .about1 .about-us{
+  .about1 .about-us {
     margin: 2% 12%;
   }
- 
-  .about-us{
+
+  .about-us {
     width: 700px;
     margin: 2% 5%;
-    padding: 2%
+    padding: 2%;
   }
- 
+
   /*=================================product================================*/
+  /**hero section*/
+  .product-hero {
+    background-image: url(images/doctor-5710156_1920.jpg);
+    background-size: cover;
+    padding: 10%;
+  }
+  .product-content {
+    text-align: left;
+    font-size: 1.8rem;
+    color: black;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 10px 10px;
+    border-radius: 10px;
+  }
   /*==communicator==*/
-  .communicator {
+  .Communicator {
     display: flex;
-    flex-direction: column;
   }
-  .communicator-regular,
-  .communicator-cellular {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-  }
-  .communicator-regular p {
-    margin: 5%;
-    width: 400px;
-  }
-  .communicator-cellular p {
-    margin: 5% 8% 5% 10%;
-    width: 400px;
+  .Communicator-content {
+    margin: 1% 4%;
+    font-size: 2rem;
   }
   /*product*/
   .product {
@@ -463,10 +545,48 @@ tbody tr:hover {
     flex-direction: row;
   }
   article {
-    width: 500px;
+    width: 300px;
+  }
+  /*services*/
+  .product-service2 {
+    display: flex;
+  }
+  .product-service1 {
+    width: 800px;
+    padding: 3%;
+    margin: 1% 2%;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 3px;
+  }
+  .product-service1 h3,
+  .product-1 h3 {
+    color: #16425b;
+    font-size: 2.5rem;
   }
   /*==product-action==*/
   /*=========================contact us================*/
+  .hero-contact h1 {
+    color: white;
+  }
+  .hero-contact {
+    background-image: url(images/contact-us.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+  }
+  .hero-contact {
+    color: white;
+    padding: 5% 2%;
+  }
+  .hero-contact h1 {
+    font-size: 4rem;
+  }
+  .hero-contact p {
+    font-size: 2rem;
+    margin: 2% 50% 2% auto;
+  }
   .contact {
     display: flex;
     flex-direction: row;

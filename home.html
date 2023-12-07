@@ -29,7 +29,9 @@
   <body>
     <header>
       <div class="wrapper-width">
-        <img src="images/logo.png" alt="logo" width="80" />
+        <a href="home.html">
+          <img src="images/logo.png" alt="logo" width="80"
+        /></a>
         <nav>
           <a class="toggle" onclick="showNav()"
             ><i class="fa fa-bars" aria-hidden="true"></i
@@ -38,7 +40,7 @@
             <li><a href="">Home</a></li>
             <li><a href="product.html">Product & Services</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="">Order Now</a></li>
+            <li><a class="order" href="">Order Now</a></li>
           </ul>
         </nav>
       </div>
@@ -54,31 +56,49 @@
         <div class="wrapper-width">
           <div class="hero-content">
             <q>Help At The Push Of A Button</q>
-            <p></p>
-            Lifeline: A 24/7 personal emergency response system. Press the
-            wearable Personal Help Button to summon help silently. A dedicated
-            Personal Response Associate ensures a fast response, crucial in
-            emergencies, even when communication is difficult
+            <p>
+              Lifeline: A 24/7 personal emergency response system. Press the
+              wearable Personal Help Button to summon help silently. A dedicated
+              Personal Response Associate ensures a fast response, crucial in
+              emergencies, even when communication is difficult
+            </p>
           </div>
         </div>
       </section>
       <section class="how-it-work">
         <div class="wrapper-width">
           <h2>How Lifeline Works</h2>
-          <iframe
-            width="350"
-            height="250"
-            src="https://www.youtube.com/embed/BmWM2kyzpzQ?si=GPEtwFZYu1uQGQpM"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+          <div class="how-work-content">
+            <iframe
+              width="400"
+              height="300"
+              src="https://www.youtube.com/embed/BmWM2kyzpzQ?si=GPEtwFZYu1uQGQpM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div class="extra">
+              <h3>If a fall should happen</h3>
+              <p>
+                Not all falls can be prevented. If a fall does occur, older
+                adults need to be sure they can reach help easily and quickly,
+                especially if they are injured, in order to prevent further
+                injury and dangerous complications. The Comox Valley Lifeline
+                Society offers a variety of medical alert services designed
+                specifically for older adults that provide fast, 24/7 access to
+                expert help in an emergency. These services range from the
+                standard HomeSafe service to the fall detection capability of
+                the HomeSafe with AutoAlert and the freedom of the new GoSafe
+                mobile service.
+              </p>
+            </div>
+          </div>
           <div class="steps">
             <div class="step">
               <img
                 class="how_it_work_images"
-                src="images/how-it-works-01.jpg"
+                src="images/how-it-works-01.png"
                 alt="how it work1"
               />
               <h3>Step 1</h3>
@@ -96,7 +116,7 @@
             <div class="step">
               <img
                 class="how_it_work_images"
-                src="images/how-it-works-02.jpg"
+                src="images/how-it-works-02.png"
                 alt="step3"
               />
               <h3>Step 3</h3>
@@ -109,7 +129,7 @@
             <div class="step">
               <img
                 class="how_it_work_images"
-                src="images/how-it-works-03.jpg"
+                src="images/how-it-works-03.png"
                 alt="step4"
               />
               <h3>Step 4</h3>
@@ -123,15 +143,16 @@
       </section>
       <section class="service">
         <div class="wrapper-width">
-          <h2 style="text-align: center">Services</h2>
+          <h2>Services</h2>
           <div class="services">
             <div class="services1">
               <h3>HomeSafe Basic</h3>
-              <img src="images/home-base.jpg" alt="homesafe" width="380" />
+              <img src="images/home-base.jpg" alt="homesafe" width="340" />
               <p class="service-content">
                 Wearable help button for instant assistance within in-home
                 Communicator range.
               </p>
+              <p>35$ per month for monitoring</p>
               <div class="shop">
                 <a href="">Shop Now</a>
               </div>
@@ -141,7 +162,7 @@
               <img
                 src="images/fall-detection.jpg"
                 alt="fall-detection"
-                width="380"
+                width="340"
               />
               <p class="service-content">
                 HomeSafe with Fall Detection ensures independent living with
@@ -149,19 +170,21 @@
                 at risk or with a fear of falling, it minimizes false alarms,
                 providing quick access to help.
               </p>
+              <p>$55 per month for monitoring</p>
               <div class="shop">
                 <a href="">Shop Now</a>
               </div>
             </div>
             <div class="services1">
               <h3>On The Go is Coming Soon!</h3>
-              <img src="images/on-the-go.jpg" alt="on the go" width="380" />
+              <img src="images/on-the-go.jpg" alt="on the go" width="340" />
               <p class="service-content">
                 Mobile medical alert with GPS and five locating technologies for
                 on-the-go safety. Usable at home or away with cellular
                 connectivity. Features automatic fall detection for added
                 security.
               </p>
+              <p>$70 per month for monitoring.</p>
               <div class="shop">
                 <a href="">Shop Now</a>
               </div>
@@ -195,8 +218,8 @@
                 in ComoxVelly offering 24/7 call response in English and French.
               </p>
             </div>
-            </div>
-            <div class="about1">
+          </div>
+          <div class="about1">
             <div class="about-us">
               <img src="images/icons8-donation-48.png" alt="Donation" />
               <p>
@@ -212,8 +235,7 @@
                 reasonable price.
               </p>
             </div>
-            </div>
-          
+          </div>
         </div>
       </section>
       <section class="call-to-action">
@@ -234,7 +256,7 @@
       <div class="wrapper-width">
         <div class="footer">
           <div class="left">
-            <h2>We're Here to Help You.</h2>
+            <a href="home.html"><h2>We're Here to Help You.</h2></a>
             <div class="social-media">
               <a href="#" class="fa fa-facebook"></a>
               <a href="#" class="fa fa-twitter"></a>
@@ -242,7 +264,7 @@
             </div>
           </div>
           <div class="middle">
-            <h3>Product</h3>
+            <a href="product.html"><h3>Product</h3></a>
             <ul>
               <li><a href="">On the Go</a></li>
               <li><a href="">At Home</a></li>
@@ -258,7 +280,7 @@
             </ul>
           </div>
           <div class="right">
-            <h3>Contact</h3>
+            <a href="contact.html"><h3>Contact</h3></a>
             <address>
               <a href="">Reception@comoxvalleylifeline.com</a>.<br />
               <a href="tel:+14155550132">+1 (250) 338 - 4255</a>.<br />
