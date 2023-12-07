@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Contact us</title>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    >
+  </head>
+  <body>
+    <header>
+      <div class="wrapper-width">
+        <a href="index.html">
+          <img src="images/logo.png" alt="logo" width="80"
+        ></a>
+        <nav>
+          <a class="toggle" onclick="showNav()"
+            ><i class="fa fa-bars" aria-hidden="true"></i
+          ></a>
+          <ul id="nav-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Product & Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="order" href="">Order Now</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+    <main>
+      <section class="hero-contact">
+        <div class="wrapper-width">
+          <h1>Contact Us</h1>
+          <p>
+            Call or send a message to connect with one of our expert and
+            friendly associates.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrapper-width">
+          <div class="contact">
+            <div class="contact1">
+              <h2>Call or Send Us a Message</h2>
+              <div class="contact2">
+                <h3>Product Inquiries</h3>
+                <a href="tel:(250)338-4255">(250) 338-4255</a>
+                <p>Mon-Fri: 8am to 8pm, Sat & Sun: 9am to 5pm ET</p>
+                <h3 class="Customer">Customer Support</h3>
+                <a href="tel:(250)338-4255">(250) 338-4255</a>
+                <p>Mon-Fri: 8am to 8pm, Sat & Sun: 9am to 5pm ET</p>
+              </div>
+            </div>
+
+            <div class="form">
+              <h2>Have any Question?</h2>
+              <p>
+                If you have any questions or concerns, feel free to reach out to
+                us using the contact form below.
+              </p>
+
+              <form>
+                <label for="name">Your Name:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Ex: Bhoomi Patel"
+                  required
+                >
+
+                <label for="email">Your Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Ex: bhoomi@yahoo.com"
+                  required
+                >
+                <label for="program">Product</label>
+                <select id="program" name="product">
+                  <option value="certificate">Home safe</option>
+                  <option value="diploma">On the Go</option>
+                  <option value="advanced diploma">
+                    HomeSafe with Fall Detection
+                  </option>
+                </select>
+
+                <label for="message">Your Message:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+
+                <div class="wrapper-button">
+                  <input type="reset" value="Reset" >
+                  <input type="submit" value="Submit" >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="wrapper-width">
+          <table>
+            <caption>
+              <h2>Community Office</h2>
+            </caption>
+            <thead>
+              <tr>
+                <th>Other communities</th>
+                <th>Contact</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cowichan Valley</td>
+                <td>(250) 746 - 0814</td>
+              </tr>
+              <tr>
+                <td>Chemainus-Crofton</td>
+                <td>(250) 246 - 3883</td>
+              </tr>
+              <tr>
+                <td>Sunshine Coast Lifeline</td>
+                <td>(604) 885 - 9501</td>
+              </tr>
+              <tr>
+                <td>Campbell River</td>
+                <td>(250) 286 - 4888</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="location">
+        <div class="wrapper-width">
+          <h2>Comox Valley Lifeline Society Head Office & Response Centre</h2>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d645.3089924931944!2d-124.99692099999997!3d49.687528999999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1701229460513!5m2!1sen!2sca"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <footer>
+    
+        <div class="wrapper-width">
+          <div class="footer">
+            <div class="left">
+              <a href="index.html"><h2>We're Here to Help You.</h2></a>
+              <div class="social-media">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+              </div>
+            </div>
+            <div class="middle">
+              <a href="product.html"><h3>Product</h3></a>
+              <ul>
+                <li><a href="">On the Go</a></li>
+                <li><a href="">At Home</a></li>
+                <li><a href="">Fall Detection</a></li>
+              </ul>
+            </div>
+            <div class="middle1">
+              <h3>About us</h3>
+              <ul>
+                <li><a href="">Non Profital</a></li>
+                <li><a href="">Volunteers</a></li>
+                <li><a href="">Donation</a></li>
+              </ul>
+            </div>
+            <div class="right">
+              <a href="contact.html"><h3>Contact</h3></a>
+              <address>
+                <a href="">Reception@comoxvalleylifeline.com</a>.<br >
+                <a href="tel:+14155550132">+1 (250) 338 - 4255</a>.<br >
+                <a href="">Fax: 250 - 338 - 4922</a><br >
+                Comox Valley Lifeline Society<br >392 - 10th Street<br >
+                Courtenay, BC V9N 1P5<br >
+                Canada
+              </address>
+            </div>
+            <div class="social-media1">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-instagram"></a>
+            </div>
+          </div>
+        </div>
+        <p>©2023 ComoxvalleyLifeline | All right reserved</p>
+        <p>This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.</p>
+      </footer>
+  
+  </body>
+</html>
